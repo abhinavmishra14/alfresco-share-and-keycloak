@@ -4,13 +4,13 @@ This project demonstrates how to configure Alfresco, Share, Nginx, and Keycloak 
 
 ## Important Configuration
 
-- Add your local computer IP to `.env` variable HOST_IP before running Docker Compose. This is used to connect keycloak with alfresco and share.
+- Create a local IP to HOST_NAME name mapping in in `hosts` file. e.g. 192.168.1.12 alfresco.local.com or 127.0.0.1 localhost.
 
-- Add a hostname in host file to map to HOST_NAME variable in `.env `before running Docker Compose. This is used to start keycloak with a hostname.
+- Add a hostname in host file to map to HOST_NAME variable in `.env` before running Docker Compose. This is used to start keycloak with a hostname.
 
 - Review `alfresco-realm.json` in case you want to add/update any user or group. Do not change the realm and client configuration until first import. You can play around realm later and adjust accordingly as needed.
 
-- 
+- TODO::
 
 
 ### Docker Image Versions used for this project

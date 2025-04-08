@@ -63,7 +63,7 @@ services:
                 -XX:MinRAMPercentage=50 -XX:MaxRAMPercentage=80
                 -Dauthentication.chain=identity-service1:identity-service,alfrescoNtlm1:alfrescoNtlm
                 -Didentity-service.enable-basic-auth=true
-                -Didentity-service.auth-server-url=http://${HOST_IP}:8999
+                -Didentity-service.auth-server-url=http://keycloak:8080
                 -Didentity-service.realm=alfresco
                 -Didentity-service.resource=alfresco
                 -Didentity-service.authentication.validation.failure.silent=false
@@ -145,7 +145,7 @@ services:
                 -Daims.enabled=true
                 -Daims.realm=alfresco
                 -Daims.enableBasicAuth=true
-                -Daims.authServerUrl=http://${HOST_IP}:8999
+                -Daims.authServerUrl=http://keycloak:8080
                 -XX:MinRAMPercentage=50 -XX:MaxRAMPercentage=80
                 "
         healthcheck:
